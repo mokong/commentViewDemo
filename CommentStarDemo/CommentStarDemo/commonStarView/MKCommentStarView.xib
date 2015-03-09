@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKCommentStarView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zd-r9-9K6">
+                    <rect key="frame" x="0.0" y="36" width="280" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="cWK-cH-V7E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k4h-cJ-vEX">
+                    <rect key="frame" x="36" y="8" width="25" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="b11-4p-84P"/>
+                        <constraint firstAttribute="height" constant="23" id="ikW-tA-dpU"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNQ-JK-phi">
+                    <rect key="frame" x="83" y="8" width="25" height="23"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMf-bd-akd">
+                    <rect key="frame" x="128" y="8" width="25" height="23"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzH-qk-QyW">
+                    <rect key="frame" x="219" y="8" width="25" height="23"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwd-d5-kCo">
+                    <rect key="frame" x="173" y="8" width="25" height="23"/>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="height" secondItem="kNQ-JK-phi" secondAttribute="height" id="2Um-LT-r2S"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="top" secondItem="kNQ-JK-phi" secondAttribute="top" id="5EF-N7-HEL"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="leading" secondItem="kNQ-JK-phi" secondAttribute="trailing" constant="20" id="98G-Fo-KEb"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="height" secondItem="k4h-cJ-vEX" secondAttribute="height" id="A7W-gG-Amc"/>
+                <constraint firstAttribute="trailing" secondItem="1zd-r9-9K6" secondAttribute="trailing" id="EYl-XH-Uep"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="top" secondItem="k4h-cJ-vEX" secondAttribute="top" id="Ewt-M8-8Ox"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="width" secondItem="kNQ-JK-phi" secondAttribute="width" id="HLD-lx-Cva"/>
+                <constraint firstItem="1zd-r9-9K6" firstAttribute="top" secondItem="Mwd-d5-kCo" secondAttribute="bottom" constant="5" id="IGj-RW-qTG"/>
+                <constraint firstItem="k4h-cJ-vEX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="KK2-xe-UzA"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="width" secondItem="dzH-qk-QyW" secondAttribute="width" id="Ucv-vp-o29"/>
+                <constraint firstItem="1zd-r9-9K6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aKC-uE-e7M"/>
+                <constraint firstItem="Mwd-d5-kCo" firstAttribute="leading" secondItem="TMf-bd-akd" secondAttribute="trailing" constant="20" id="eg9-6y-sBv"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="width" secondItem="Mwd-d5-kCo" secondAttribute="width" id="fhQ-eM-Sjc"/>
+                <constraint firstItem="dzH-qk-QyW" firstAttribute="leading" secondItem="Mwd-d5-kCo" secondAttribute="trailing" constant="21" id="idD-2i-Hza"/>
+                <constraint firstItem="k4h-cJ-vEX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mZg-Xc-AHL"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="width" secondItem="k4h-cJ-vEX" secondAttribute="width" id="med-SY-aVc"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="height" secondItem="Mwd-d5-kCo" secondAttribute="height" id="p5e-8Y-eMA"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="top" secondItem="Mwd-d5-kCo" secondAttribute="top" id="pR9-8l-3jG"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="top" secondItem="dzH-qk-QyW" secondAttribute="top" id="tod-lm-aaE"/>
+                <constraint firstItem="TMf-bd-akd" firstAttribute="height" secondItem="dzH-qk-QyW" secondAttribute="height" id="ueZ-oK-U8X"/>
+                <constraint firstItem="kNQ-JK-phi" firstAttribute="leading" secondItem="k4h-cJ-vEX" secondAttribute="trailing" constant="22" id="xKv-En-DK7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="commentLabel" destination="1zd-r9-9K6" id="DdF-sz-uZ1"/>
+                <outlet property="fifthStarButton" destination="dzH-qk-QyW" id="N1q-cK-zhB"/>
+                <outlet property="firstStarButton" destination="k4h-cJ-vEX" id="CCn-ld-cM1"/>
+                <outlet property="fourthStarButton" destination="Mwd-d5-kCo" id="adx-KJ-P4O"/>
+                <outlet property="secondStarButton" destination="kNQ-JK-phi" id="NVs-bF-WJ2"/>
+                <outlet property="thirdStarButton" destination="TMf-bd-akd" id="pP7-Fp-cWp"/>
+            </connections>
+            <point key="canvasLocation" x="312" y="203"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
